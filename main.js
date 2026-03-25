@@ -68,6 +68,10 @@ for (let i = 0; i < teamMembers.length; i++) {
       </div>
     </div>
   </div> 
-`
+` 
+
+cards += murkupString 
   
 }
+
+rowEl.innerHTML = cards
