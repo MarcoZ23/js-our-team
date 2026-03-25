@@ -35,7 +35,39 @@ const teamMembers = [
     email: "danielaamet@team.com",
     img: "img/female3.png"
   }
-];
+]; 
 
 
+/*
+<div class="col-12 col-md-6 col-lg-4">  
+  <div class="card d-flex flex-row">
+    <img src="./img/male1.png" alt="Marco Bianchi">
+    <div class="card-body bg-black text-white">
+      <h4>Marco Bianchi</h4>
+      <p>Designer</p>
+      <a href="#">marcobianchi@team.com</a>
+    </div>
+  </div>
+</div> 
+*/
 
+const rowEl = document.querySelector(".row") 
+
+let cards = ""
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = teamMembers[i];
+  const {name, role, email, img} = member 
+  const murkupString = `
+  <div class="col-12 col-md-6 col-lg-4">  
+    <div class="card d-flex flex-row">
+      <img src="${img}" alt="${name}">
+      <div class="card-body bg-black text-white">
+        <h4>${name}</h4>
+        <p>${role}</p>
+        <a href="#">${email}</a>
+      </div>
+    </div>
+  </div> 
+`
+  
+}
