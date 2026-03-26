@@ -74,4 +74,10 @@ cards += murkupString
   
 }
 
-rowEl.innerHTML = cards
+rowEl.innerHTML = cards 
+
+const formEl = document.querySelector("div form")
+formEl.addEventListener("submit", function(e){
+  e.preventDefault()
+
+})
